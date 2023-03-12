@@ -676,66 +676,64 @@ consumers). Это все равно должно сработать.
 
 ###Ссылки
 
-[B04] “Implementing Condition Variables with Semaphores” by Andrew Birrell. December 2004. An interesting read on how 
-difficult implementing CVs on top of semaphores really is, and the mistakes the author and co-workers made along the way. 
-Particularly relevant because the group had done a ton of concurrent programming; Birrell, for example, is known for 
-(among other things) writing various thread-programming guides. 
+[B04] “Implementing Condition Variables with Semaphores” написано Andrew Birrell. Декабрь 2004. Интересное чтение о том, 
+насколько на самом деле сложно реализовать CVS поверх семафоров, и об ошибках, допущенных автором и коллегами на этом пути.  
+Особенно актуально, потому что группа выполнила тонну параллельного программирования; Биррелл, например, известен 
+(среди прочего) написанием различных руководств по потоковому программированию.
 
-[CB08] “Real-world Concurrency” by Bryan Cantrill, Jeff Bonwick. ACM Queue. Volume 6, No. 5. September 2008. A nice 
-article by some kernel hackers from a company formerly known as Sun on the real problems faced in concurrent code. 
+[CB08] “Real-world Concurrency” написано Bryan Cantrill, Jeff Bonwick. ACM Queue. Volume 6, No. 5. Сентябрь 2008. Хорошая 
+статья от некоторых хакеров ядра из компании, ранее известной как Sun, о реальных проблемах, с которыми сталкиваются в параллельном коде. 
 
-[CHP71] “Concurrent Control with Readers and Writers” by P.J. Courtois, F. Heymans, D.L. Parnas. Communications of the 
-ACM, 14:10, October 1971. The introduction of the reader-writer problem, and a simple solution. Later work introduced 
-more complex solutions, skipped here because, well, they are pretty complex. 
+[CHP71] “Concurrent Control with Readers and Writers” написано P.J. Courtois, F. Heymans, D.L. Parnas. Communications ACM, 14:10, октябрь 1971 года. 
+Введение в проблему "reader-writer" и простое решение. В более поздней работе были представлены более сложные решения, 
+пропущенные здесь, потому что, ну, они довольно сложные.
 
 [D59] “A Note on Two Problems in Connexion with Graphs” by E. W. Dijkstra. Numerische Mathematik 1, 269271, 1959. 
-Available: http://www-m3.ma.tum.de/twiki/pub/MN0506/ WebHome/dijkstra.pdf. Can you believe people worked on algorithms 
-in 1959? We can’t. Even before computers were any fun to use, these people had a sense that they would transform the world... 
+Доступно по адресу: http://www-m3.ma.tum.de/twiki/pub/MN0506/ WebHome/dijkstra.pdf. Можете ли вы поверить, что люди 
+работали над алгоритмами в 1959 году? Мы не можем. Еще до того, как пользоваться компьютерами стало хоть сколько-нибудь 
+интересно, у этих людей было ощущение, что они преобразят мир...
 
-[D68a] “Go-to Statement Considered Harmful” by E.W. Dijkstra. CACM, volume 11(3), March
-1968. http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF. Sometimes thought
-of as the beginning of the field of software engineering.
+[D68a] “Go-to Statement Considered Harmful” by E.W. Dijkstra. CACM, volume 11(3), Март
+1968. http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD215.PDF. Иногда считается началом области разработки программного 
+1969. обеспечения.
 
-[D68b] “The Structure of the THE Multiprogramming System” by E.W. Dijkstra. CACM, volume 11(5), 1968. One of the 
-earliest papers to point out that systems work in computer science is an
-engaging intellectual endeavor. Also argues strongly for modularity in the form of layered systems.
+[D68b] “The Structure of the THE Multiprogramming System” by E.W. Dijkstra. CACM, volume 11(5), 1968. Одна из самых 
+ранних работ, в которой указывалось, что работа систем в информатике является увлекательным интеллектуальным занятием. 
+Также убедительно выступает за модульность в виде многоуровневых систем.
 
 [D72] “Information Streams Sharing a Finite Buffer” by E.W. Dijkstra. Information Processing
-Letters 1, 1972. http://www.cs.utexas.edu/users/EWD/ewd03xx/EWD329.PDF. Did
-Dijkstra invent everything? No, but maybe close. He certainly was the first to clearly write down
-what the problems were in concurrent code. However, practitioners in OS design knew of many of the
-problems described by Dijkstra, so perhaps giving him too much credit would be a misrepresentation.
+Letters 1, 1972. http://www.cs.utexas.edu/users/EWD/ewd03xx/EWD329.PDF. Неужели Дейкстра все изобрел? Нет, но, может быть, 
+почти всё. Он, безусловно, был первым, кто четко описал, в чем заключались проблемы в параллельном коде. Однако специалисты 
+по проектированию ОС знали о многих проблемах, описанных Дейкстрой, поэтому, возможно, было бы неверно приписывать ему 
+слишком много заслуг.
 
-[D08] “The Little Book of Semaphores” by A.B. Downey. Available at the following site:
-http://greenteapress.com/semaphores/. A nice (and free!) book about semaphores. Lots
-of fun problems to solve, if you like that sort of thing
+[D08] “The Little Book of Semaphores” by A.B. Downey. Доступно по адресу:
+http://greenteapress.com/semaphores/. Хорошая (и бесплатная!) книга о семафорах. Много забавных задач для решения, если 
+вам нравятся подобные вещи
 
-[D71] “Hierarchical ordering of sequential processes” by E.W. Dijkstra. Available online here:
-http://www.cs.utexas.edu/users/EWD/ewd03xx/EWD310.PDF. Presents numerous concurrency problems, including Dining 
-Philosophers. The wikipedia page about this problem is also useful.
+[D71] “Hierarchical ordering of sequential processes” by E.W. Dijkstra. Доступно по адресу:
+http://www.cs.utexas.edu/users/EWD/ewd03xx/EWD310.PDF. Представляет многочисленные проблемы параллелизма, включая Dining 
+Philosophers Страница википедии, посвященная этой проблеме, также полезна.
 
-[GR92] “Transaction Processing: Concepts and Techniques” by Jim Gray, Andreas Reuter.
-Morgan Kaufmann, September 1992. The exact quote that we find particularly humorous is found
-on page 485, at the top of Section 8.8: “The first multiprocessors, circa 1960, had test and set instructions ... 
-presumably the OS implementors worked out the appropriate algorithms, although Dijkstra is
-generally credited with inventing semaphores many years later.” Oh, snap!
+[GR92] “Transaction Processing: Concepts and Techniques” написано Jim Gray, Andreas Reuter.
+Morgan Kaufmann, September 1992. Точная цитата, которая кажется нам особенно забавной, находится на странице 485, вверху 
+раздела 8.8: “Первые мультипроцессоры, примерно в 1960 году, имели инструкции по тестированию и настройке...  предположительно, 
+разработчики ОС разработали соответствующие алгоритмы, хотя Дейкстре обычно приписывают изобретение семафоров много лет спустя.” Вот, блин!
 
 [H87] “Aspects of Cache Memory and Instruction Buffer Performance” by Mark D. Hill. Ph.D.
-Dissertation, U.C. Berkeley, 1987. Hill’s dissertation work, for those obsessed with caching in early
-systems. A great example of a quantitative dissertation.
+Dissertation, U.C. Berkeley, 1987. Диссертационная работа Хилла для тех, кто одержим кэшированием в ранних системах. 
+Отличный пример количественной диссертации.
 
 [L83] “Hints for Computer Systems Design” by Butler Lampson. ACM Operating Systems
-Review, 15:5, October 1983. Lampson, a famous systems researcher, loved using hints in the design
-of computer systems. A hint is something that is often correct but can be wrong; in this use, a signal()
-is telling a waiting thread that it changed the condition that the waiter was waiting on, but not to trust
-that the condition will be in the desired state when the waiting thread wakes up. In this paper about
-hints for designing systems, one of Lampson’s general hints is that you should use hints. It is not as
-confusing as it sounds.
+Review, 15:5, October 1983. Лэмпсон, известный системный исследователь, любил использовать подсказки при проектировании 
+компьютерных систем. Подсказка - это то, что часто является правильным, но может быть неправильным; в этом случае signal() 
+сообщает ожидающему потоку, что он изменил условие, которого тот ожидал, но не следует доверять тому, что условие 
+будет в желаемом состоянии, когда ожидающий поток проснется. В этой статье о подсказках для проектирования систем один 
+из общих советов Лэмпсона заключается в том, что вы должны использовать подсказки. Это не так запутанно, как кажется.
 
-[T99] “Re: NT kernel guy playing with Linux” by Linus Torvalds. June 27, 1999. Available:
-https://yarchive.net/comp/linux/semaphores.html. A response from Linus himself
-about the utility of semaphores, including the throttling case we mention in the text. As always, Linus
-is slightly insulting but quite informative.
+[T99] “Re: NT kernel guy playing with Linux” написано Linus Torvalds. June 27, 1999. Доступно по адресу:
+https://yarchive.net/comp/linux/semaphores.html. Ответ от самого Лайнуса о полезности семафоров, включая случай 
+регулирования, который мы упоминаем в тексте. Как всегда, Линус слегка оскорбителен, но весьма информативен.
 
 
 
